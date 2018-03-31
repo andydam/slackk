@@ -1,0 +1,35 @@
+{
+  "name": "slackk",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "mocha tests --recursive --exit",
+    "lint":
+      "eslint ./ --config .eslintrc.js --ext js,jsx --ignore-pattern node_modules/ --ignore-pattern tests/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andydam/slackk.git"
+  },
+  "author": "andydam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andydam/slackk/issues"
+  },
+  "homepage": "https://github.com/andydam/slackk#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "mocha": "^5.0.5"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
